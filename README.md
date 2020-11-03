@@ -18,7 +18,7 @@ First, you need deno : https://deno.land/#installation
 
 The whole application is encapsulated in a single file, and could simply run with :
 ```
-deno run --unstable --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
+deno run --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
 ```
 Then, go to [http://localhost:8000/](http://localhost:8000/) with a web browser (this page open at app start-up
  if you use the `--allow-run` parameter).
@@ -32,7 +32,7 @@ The web app list markdown files recursivly from the folder `http://localhost:800
 
 ## Install (by Deno)
 ```
-deno install --name mds --allow-net --allow-read --unstable --allow-write --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
+deno install --name mds --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
 ```
 Then, simply run `mds` from the folder to show and edit the current folder.
 
