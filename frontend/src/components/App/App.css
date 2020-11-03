@@ -1,0 +1,16 @@
+
+.simple-mde {
+  height: 100%;
+  width: 100%;
+}
+
+.EasyMDEContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.EasyMDEContainer > .CodeMirror {
+  height: 100%;
+}
+
