@@ -16,7 +16,7 @@ A web app to explore markdown files (and to make a standalone [Deno](https://den
 ## To run the WebApp :
 First, you need deno : https://deno.land/#installation
 
-The whole application is encapsulated in a single file, and could simply run with :
+The whole application is encapsulated in a single file (FIXME : not true, deno bundle bug, dist/server.js TODO), and could simply run with :
 ```
 deno run --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
 ```
