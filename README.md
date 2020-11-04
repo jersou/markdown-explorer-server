@@ -16,23 +16,23 @@ A web app to explore markdown files (and to make a standalone [Deno](https://den
 ## To run the WebApp :
 First, you need deno : https://deno.land/#installation
 
-The whole application is encapsulated in a single file (FIXME : not true, deno bundle bug, dist/server.js TODO), and could simply run with :
+The whole application is encapsulated in a single file, and could simply run with :
 ```
-deno run --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
+deno run --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/dist/server.js
 ```
 Then, go to [http://localhost:8000/](http://localhost:8000/) with a web browser (this page open at app start-up
- if you use the `--allow-run` parameter).
+If you use the `--allow-run` parameter).
 
 The `--allow-run` parameter can be skipped if you don't want the application to open in the default browser on startup.
 
 If the script parameter `--wait-and-close` is present, the server will wait a frontend connection,
  and it will stop by itself as soon as the frontend is closed (a websocket check this).
 
-The web app list markdown files recursivly from the folder `http://localhost:8000/mds/<the path HERE>`.
+The web app list markdown files recursively from the folder `http://localhost:8000/mds/<the path HERE>`.
 
 ## Install (by Deno)
 ```
-deno install --name mds --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/server.ts
+deno install --name mds --unstable --allow-read --allow-write --allow-net --allow-run https://raw.githubusercontent.com/jersou/markdown-explorer-server/main/dist/server.js
 ```
 Then, simply run `mds` from the folder to show and edit the current folder.
 
